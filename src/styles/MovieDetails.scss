@@ -1,0 +1,31 @@
+.movie-details {
+  min-height: 250px;
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 200px;
+    box-shadow: 5px 5px lightgrey;
+  }
+  img:hover {
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid grey;
+  }
+  .description {
+    padding-top: 1rem;
+    width: 120px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.5s;
+  }
+}
+.movie-details:hover {
+  transform: scale(1.2);
+}

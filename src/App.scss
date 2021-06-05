@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  .message {
+    border: 2px solid rgb(99, 179, 233);
+    font-weight: 800;
+    font-size: 33px;
+    color: grey;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    // justify-content: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

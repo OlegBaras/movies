@@ -1,0 +1,44 @@
+$primary: rgb(99, 179, 233);
+$secondary: #fff;
+
+.search-bar {
+  padding: 1rem;
+  background-color: $primary;
+  color: $secondary;
+  font-size: 22px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  .movie-icon {
+    display: flex;
+    align-self: flex-start;
+    height: 50px;
+    width: 100px;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+    padding: 0.2rem;
+    border: none;
+    color: $primary;
+  }
+
+  button {
+    padding: 5px;
+    background-color: $secondary;
+    color: $primary;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  button:hover {
+    background-color: lightgrey;
+    color: $primary;
+  }
+  button:active {
+    background-color: grey;
+  }
+}

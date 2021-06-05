@@ -1,0 +1,18 @@
+$primary: rgb(99, 179, 233);
+$secondary: #fff;
+.movies {
+  // border: 2px solid green;
+  margin: 1rem;
+  h1 {
+    color: $primary;
+  }
+
+  .search-movies {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: $primary;
+    gap: 0.5rem;
+  }
+}
