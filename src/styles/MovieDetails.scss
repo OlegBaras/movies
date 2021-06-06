@@ -41,6 +41,9 @@ $shadowColor: #d3d3d3;
   }
   .extra-details {
     @include heading-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     position: absolute;
     bottom: 130px;
@@ -48,19 +51,17 @@ $shadowColor: #d3d3d3;
     transition: all 0.5s ease;
     background: $primary;
     color: $secondary;
+    height: auto;
+    width: auto;
+    border-radius: 3px;
+    pointer-events: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 .movie-details:hover {
   transform: scale(1.1);
   .extra-details {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
     opacity: 1;
-    height: auto;
-    width: auto;
-    border-radius: 3px;
-    pointer-events: none;
-    margin-bottom: 0.5rem;
   }
 }
