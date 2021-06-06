@@ -8,8 +8,8 @@ The task - implement ability to search for any film title and to display a list 
 
 You can test it online following the link above, or you can clone/download the repo and run it locally, please note - you will have to add ".env" file to the root level with the environment variable, name it as follows: REACT_APP_API_KEY=[API_KEY]. To get an API_KEY please visit http://www.omdbapi.com/. If you follow the link https://omdb-movies-search.netlify.app/ - API_KEY is set within Netlify Environment variables.
 
-- The top 9 favourite films have its IDs hardcoded and uses ID parameter to fetch further details.
-- The search is using Search parameter to fetch the requested keyword films.
+- The top 9 favourite films have its IDs hardcoded and uses ID parameter to fetch further details. #https://www.omdbapi.com/?apikey=${API_KEY}i=${id}
+- The search is using Search parameter to fetch the requested keyword films. #https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}
 
 - Responsive design (mobile / tablet / desktop)
 - Icons come from react-icons.

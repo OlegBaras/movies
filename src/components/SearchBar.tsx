@@ -7,26 +7,29 @@ import { MdLocalMovies } from "react-icons/md";
 interface Props {
   searchKeyWord: string;
   setSearchKeyWord: React.Dispatch<React.SetStateAction<string>>;
-  setUrl: React.Dispatch<React.SetStateAction<string>>;
+  // setUrl: React.Dispatch<React.SetStateAction<string>>;
   API_KEY: string | undefined;
+  onSearchClick: Function;
 }
 
 const SearchBar: React.FC<Props> = ({
   searchKeyWord,
   setSearchKeyWord,
-  setUrl,
+  onSearchClick,
   API_KEY,
 }: {
   searchKeyWord: string;
   setSearchKeyWord: React.Dispatch<React.SetStateAction<string>>;
-  setUrl: React.Dispatch<React.SetStateAction<string>>;
+  onSearchClick: any;
   API_KEY: string | undefined;
 }): ReactElement => {
   //Submit event handler
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSearchKeyWord(searchKeyWord);
-    setUrl(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`);
+    onSearchClick(
+      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`
+    );
   };
   //Input change event handler
   const onSearchKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -8,10 +8,11 @@ import "../styles/FavouriteMovies.scss";
 import { Movie } from "../interfaces";
 
 const FavouriteMovies = () => {
+  const API_KEY: string | undefined = process.env.REACT_APP_API_KEY;
   const [favouriteMovies, setFavouriteMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    const url = "https://www.omdbapi.com/?apikey=d5942f61&i=";
+    const url = `https://www.omdbapi.com/?apikey=${API_KEY}&i=`;
     const ids = [
       "tt0120689",
       "tt0758758",
