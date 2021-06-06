@@ -1,25 +1,20 @@
+$primary: rgb(99, 179, 233);
+
 .favourite-movies {
-  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  flex-wrap: wrap;
-  color: rgb(99, 179, 233);
+  color: $primary;
   margin: 0 1rem 0 1rem;
-  h1 {
-    justify-self: flex-start;
-  }
+
   .favourite-list {
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
-    // gap: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .favourite-movies {
     align-items: center;
     .favourite-list {

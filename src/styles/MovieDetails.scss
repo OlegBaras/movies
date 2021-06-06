@@ -1,3 +1,7 @@
+$messageColor: #808080;
+$primary: rgb(99, 179, 233);
+
+$secondary: #fff;
 .movie-details {
   min-height: 250px;
   transition: transform 0.5s;
@@ -5,16 +9,18 @@
   flex-direction: column;
   align-items: center;
   padding-right: 1rem;
+  position: relative;
 
   img {
     height: 200px;
     width: 150px;
     box-shadow: 5px 5px lightgrey;
+    border-radius: 4px;
   }
   img:hover {
     cursor: pointer;
     box-shadow: none;
-    border: 2px solid grey;
+    // border: 2px solid $messageColor;
   }
   .description {
     padding-top: 1rem;
@@ -27,7 +33,34 @@
     gap: 0.5rem;
     transition: transform 0.5s;
   }
+  .extra-details {
+    position: absolute;
+    bottom: 130px;
+    opacity: 0;
+    // height: 100px;
+    transition: all 0.5s ease;
+    background: $primary;
+    color: $secondary;
+    // height: 0;
+    // width: 100%;
+  }
+  .extra-details:hover {
+    pointer-events: auto;
+  }
 }
 .movie-details:hover {
   transform: scale(1.2);
+  .extra-details {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    padding: 1rem;
+    // text-align: center;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    border-radius: 3px;
+
+    margin-bottom: 0.5rem;
+  }
 }
