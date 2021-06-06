@@ -14,9 +14,18 @@ $primary: rgb(99, 179, 233);
   }
 }
 
-@media only screen and (max-width: 800px) {
+// @media only screen and (max-width: 800px) {
+@media (max-width: 767px) {
   .favourite-movies {
     align-items: center;
+    .favourite-list {
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .favourite-movies {
+    align-items: flex-start;
     .favourite-list {
       justify-content: center;
     }
