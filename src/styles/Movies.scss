@@ -2,6 +2,8 @@ $primary: rgb(99, 179, 233);
 $secondary: #fff;
 .movies {
   // border: 2px solid green;
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
   h1 {
     color: $primary;
@@ -19,6 +21,7 @@ $secondary: #fff;
 @media only screen and (max-width: 600px) {
   .movies {
     text-align: center;
+    // justify-content: center;
     .search-movies {
       justify-content: center;
     }
