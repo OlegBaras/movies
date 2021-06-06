@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [url, setUrl] = useState(
-    `http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`
+    `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`
   );
   const [movies, setMovies] = useState<Movie[]>([]);
   const [message, setMessage] = useState("");
