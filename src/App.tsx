@@ -60,7 +60,6 @@ const App: React.FC = () => {
         setUrl={setUrl}
         API_KEY={API_KEY}
       />
-      <FavouriteMovies />
       {isError ? <div>Something went wrong</div> : null}
       {message ? <div className="message">{message}</div> : null}
       {isLoading ? (
@@ -70,6 +69,7 @@ const App: React.FC = () => {
           {!isLoading && movies.length > 0 ? <Movies movies={movies} /> : null}
         </div>
       )}
+      <FavouriteMovies />
     </div>
   );
 };

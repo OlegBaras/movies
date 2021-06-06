@@ -16,3 +16,11 @@ $secondary: #fff;
     gap: 0.5rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  .movies {
+    text-align: center;
+    .search-movies {
+      justify-content: center;
+    }
+  }
+}

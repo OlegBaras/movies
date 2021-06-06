@@ -42,3 +42,15 @@ $secondary: #fff;
     background-color: grey;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    .movie-icon {
+      width: 50px;
+    }
+  }
+}
