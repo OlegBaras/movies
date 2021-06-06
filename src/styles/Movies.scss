@@ -1,26 +1,46 @@
 $primary: rgb(99, 179, 233);
-$secondary: #fff;
+
+@mixin heading-font {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  padding-top: 0.5rem;
+}
+
 .movies {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  color: $primary;
   h1 {
-    color: $primary;
+    @include heading-font;
   }
 
   .search-movies {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    color: $primary;
   }
 }
-@media only screen and (max-width: 600px) {
+//Mobile view
+@media (max-width: 767px) {
   .movies {
-    text-align: center;
-
+    h1 {
+      text-align: center;
+    }
     .search-movies {
       justify-content: center;
+    }
+  }
+}
+//Tablet view
+@media (min-width: 768px) and (max-width: 1024px) {
+  .movies {
+    h1 {
+      text-align: center;
+    }
+    .search-movies {
+      justify-content: flex-start;
     }
   }
 }

@@ -1,5 +1,12 @@
 $primary: rgb(99, 179, 233);
 
+@mixin heading-font {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  padding-top: 0.5rem;
+}
+
 .favourite-movies {
   display: flex;
   flex-direction: column;
@@ -7,27 +14,37 @@ $primary: rgb(99, 179, 233);
   color: $primary;
   margin: 0 1rem 0 1rem;
 
+  h1 {
+    @include heading-font;
+  }
+
   .favourite-list {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
   }
 }
-
-// @media only screen and (max-width: 800px) {
+//Mobile view
 @media (max-width: 767px) {
   .favourite-movies {
-    align-items: center;
+    h1 {
+      @include heading-font;
+      text-align: center;
+    }
     .favourite-list {
       justify-content: center;
     }
   }
 }
+
+//Tablet view
 @media (min-width: 768px) and (max-width: 1024px) {
-  .favourite-movies {
-    align-items: flex-start;
+  .favourite-list {
+    h1 {
+      text-align: flex-start;
+    }
     .favourite-list {
-      justify-content: center;
+      justify-content: flex-start;
     }
   }
 }

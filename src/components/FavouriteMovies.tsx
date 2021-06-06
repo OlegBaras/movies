@@ -4,7 +4,7 @@ import MovieDetails from "./MovieDetails";
 import "../styles/FavouriteMovies.scss";
 import { Movie } from "../interfaces";
 
-function FavouriteMovies() {
+const FavouriteMovies = () => {
   const [favouriteMovies, setFavouriteMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function FavouriteMovies() {
     const ids = [
       "tt0120689",
       "tt0758758",
-      "tt0076759",
+      "tt0108778",
       "tt0068646",
       "tt0109830",
       "tt0073486",
@@ -42,7 +42,7 @@ function FavouriteMovies() {
   }, []);
 
   return (
-    <div className="favourite-movies">
+    <section className="favourite-movies">
       <h1>Favourite Movies</h1>
       <div className="favourite-list">
         {favouriteMovies.length
@@ -51,8 +51,8 @@ function FavouriteMovies() {
             ))
           : null}
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default FavouriteMovies;

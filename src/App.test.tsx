@@ -17,7 +17,7 @@ describe("App", () => {
   });
 
   beforeAll(() => {
-    const postsURL = `http://www.omdbapi.com/?apikey=89285fbf&s=fast`;
+    const postsURL = `https://www.omdbapi.com/?apikey=89285fbf&s=fast`;
     // const postsURL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=fast`;
     fetchMock.get(postsURL, {
       Search: [

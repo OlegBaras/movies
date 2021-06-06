@@ -6,7 +6,6 @@ import { MdLocalMovies } from "react-icons/md";
 interface Props {
   searchKeyWord: string;
   setSearchKeyWord: React.Dispatch<React.SetStateAction<string>>;
-  url: string;
   setUrl: React.Dispatch<React.SetStateAction<string>>;
   API_KEY: string | undefined;
 }
@@ -14,13 +13,11 @@ interface Props {
 const SearchBar: React.FC<Props> = ({
   searchKeyWord,
   setSearchKeyWord,
-  url,
   setUrl,
   API_KEY,
 }: {
   searchKeyWord: string;
   setSearchKeyWord: React.Dispatch<React.SetStateAction<string>>;
-  url: string;
   setUrl: React.Dispatch<React.SetStateAction<string>>;
   API_KEY: string | undefined;
 }): ReactElement => {

@@ -33,10 +33,8 @@ const App: React.FC = () => {
           const result = await axios.get(url);
           if (result && result.data && result.data.Search) {
             setMovies(result.data.Search);
-            console.log(result.data.Search);
           } else if (result && result.data && result.data.Error) {
             setMessage(result.data.Error);
-            console.log(result.data.Error, "error");
           }
         } catch (error) {
           setIsError(true);
@@ -56,11 +54,10 @@ const App: React.FC = () => {
       <SearchBar
         searchKeyWord={searchKeyWord}
         setSearchKeyWord={setSearchKeyWord}
-        url={url}
         setUrl={setUrl}
         API_KEY={API_KEY}
       />
-      {isError ? <div>Something went wrong</div> : null}
+      {isError ? <div className="message">Something went wrong</div> : null}
       {message ? <div className="message">{message}</div> : null}
       {isLoading ? (
         <Loading />

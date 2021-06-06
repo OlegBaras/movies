@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/MovieDetails.scss";
 import { Movie } from "../interfaces";
 import { ImFilm } from "react-icons/im";
