@@ -7,7 +7,6 @@ import { MdLocalMovies } from "react-icons/md";
 interface Props {
   searchKeyWord: string;
   setSearchKeyWord: React.Dispatch<React.SetStateAction<string>>;
-  // setUrl: React.Dispatch<React.SetStateAction<string>>;
   API_KEY: string | undefined;
   onSearchClick: Function;
 }
