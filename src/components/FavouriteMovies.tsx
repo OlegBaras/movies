@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+//Components
 import MovieDetails from "./MovieDetails";
+//Styles
 import "../styles/FavouriteMovies.scss";
+//Interface
 import { Movie } from "../interfaces";
 
 const FavouriteMovies = () => {

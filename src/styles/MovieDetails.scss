@@ -1,48 +1,53 @@
 $messageColor: #808080;
-$primary: rgb(99, 179, 233);
-
+$primary: #63b3e9;
 $secondary: #fff;
+$shadowColor: #d3d3d3;
+@mixin heading-font {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding-top: 0.5rem;
+}
 .movie-details {
   min-height: 250px;
   transition: transform 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 1rem;
+  margin-right: 1rem;
   position: relative;
-
-  img {
-    height: 200px;
-    width: 150px;
-    box-shadow: 5px 5px lightgrey;
-    border-radius: 4px;
-  }
-  img:hover {
-    cursor: pointer;
-    box-shadow: none;
+  .image {
+    img {
+      height: 200px;
+      width: 150px;
+      box-shadow: 5px 5px $shadowColor;
+      border-radius: 4px;
+    }
+    img:hover {
+      cursor: pointer;
+      box-shadow: none;
+    }
   }
   .description {
+    @include heading-font;
+
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 120px;
     height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     gap: 0.5rem;
     transition: transform 0.5s;
   }
   .extra-details {
+    @include heading-font;
     position: absolute;
     bottom: 130px;
     opacity: 0;
     transition: all 0.5s ease;
     background: $primary;
     color: $secondary;
-  }
-  .extra-details:hover {
-    pointer-events: auto;
   }
 }
 .movie-details:hover {
@@ -56,7 +61,6 @@ $secondary: #fff;
     width: auto;
     border-radius: 3px;
     pointer-events: none;
-    font-size: 14px;
     margin-bottom: 0.5rem;
   }
 }

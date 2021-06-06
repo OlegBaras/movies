@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
-//interface
-import { Movie } from "../interfaces";
-//components
+//Components
 import MovieDetails from "./MovieDetails";
-//styles
+//Interface
+import { Movie } from "../interfaces";
+//Style
 import "../styles/Movies.scss";
 
 interface Props {

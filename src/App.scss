@@ -1,3 +1,6 @@
+$primary: #63b3e9;
+$messageColor: #808080;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +12,13 @@
   flex-direction: column;
 
   .message {
-    border: 2px solid rgb(99, 179, 233);
-    font-weight: 800;
-    font-size: 33px;
-    color: grey;
-    text-align: center;
-    height: 200px;
-    width: 200px;
+    border: 2px solid $primary;
+    font-size: 26px;
+    color: $messageColor;
+    width: auto;
+    padding: 1rem;
     margin-top: 1rem;
     display: flex;
-    // justify-content: center;
     align-self: center;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) {
   .App {
     align-items: center;
     width: 100%;

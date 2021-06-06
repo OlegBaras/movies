@@ -1,8 +1,7 @@
 $primary: rgb(99, 179, 233);
 
 @mixin heading-font {
-  font-family: sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   font-size: 26px;
   padding-top: 0.5rem;
 }
@@ -28,7 +27,6 @@ $primary: rgb(99, 179, 233);
 @media (max-width: 767px) {
   .favourite-movies {
     h1 {
-      @include heading-font;
       text-align: center;
     }
     .favourite-list {

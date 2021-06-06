@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
-//styles
+//Style
 import "../styles/SearchBar.scss";
+//Icon
 import { MdLocalMovies } from "react-icons/md";
 
 interface Props {

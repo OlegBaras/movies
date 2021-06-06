@@ -1,5 +1,8 @@
+//Styles
 import "../styles/MovieDetails.scss";
+//Interface
 import { Movie } from "../interfaces";
+//Icon
 import { ImFilm } from "react-icons/im";
 
 const MovieDetails = ({ movie }: { movie: Movie }) => {

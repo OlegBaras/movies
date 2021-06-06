@@ -2,6 +2,11 @@ $primary: rgb(99, 179, 233);
 $secondary: #fff;
 $hoverColor: #d3d3d3;
 
+@mixin common-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
 .search-bar {
   background-color: $primary;
   color: $secondary;
@@ -15,6 +20,7 @@ $hoverColor: #d3d3d3;
     width: 50px;
   }
   input {
+    @include common-font;
     width: 200px;
     height: 30px;
     padding: 0.2rem;
@@ -23,13 +29,13 @@ $hoverColor: #d3d3d3;
     color: $primary;
   }
   button {
+    @include common-font;
     padding: 5px;
     background-color: $secondary;
     color: $primary;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    font-weight: 600;
   }
   button:hover {
     background-color: $hoverColor;
