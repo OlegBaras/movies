@@ -1,15 +1,7 @@
 import React from "react";
-import {
-  render,
-  screen,
-  fireEvent,
-  waitForElementToBeRemoved,
-  getByLabelText,
-} from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./App";
 import fetchMock from "fetch-mock";
-import userEvent from "@testing-library/user-event";
-import { act } from "react-dom/test-utils";
 
 describe("App", () => {
   beforeEach(() => {
@@ -21,7 +13,7 @@ describe("App", () => {
     fetchMock.get(postsURL, {
       Search: [
         {
-          imdbID: "1",
+          imdbID: "111",
           Title: "Fast",
           Poster: "link",
           Type: "Movie",

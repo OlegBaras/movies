@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# OMDB API Movie Search
+
+# Check it live: https://omdb-movies-search.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The task - implement ability to search for any film title and to display a list of personal top 9 films.
+
+You can test it online following the link above, or you can clone/download the repo and run it locally, please note - you will have to add ".env" file to the root level with the environment variable, name it as follows: REACT_APP_API_KEY=[API_KEY]. To get an API_KEY please visit http://www.omdbapi.com/. If you follow the link https://omdb-movies-search.netlify.app/ - API_KEY is set within Netlify Environment variables.
+
+- The top 9 favourite films have its IDs hardcoded and uses ID parameter to fetch further details.
+- The search is using Search parameter to fetch the requested keyword films.
+
+- Responsive design (mobile / tablet / desktop)
+- Icons come from react-icons.
+- State management and display.
+- Styling implemented with SCSS.
+- Typescript.
 
 ## Available Scripts
 
@@ -17,30 +32,3 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

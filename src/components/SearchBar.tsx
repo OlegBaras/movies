@@ -42,6 +42,7 @@ const SearchBar: React.FC<Props> = ({
         <div>
           <input
             type="text"
+            name="searchKeyWord"
             value={searchKeyWord}
             onChange={onSearchKeyChange}
             autoComplete="off"
