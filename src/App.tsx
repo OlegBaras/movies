@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 //Components
 import Movies from "./components/Movies";
@@ -31,10 +31,8 @@ const App: React.FC = () => {
       const result = await axios.get(url);
       if (result && result.data && result.data.Search) {
         setMovies(result.data.Search);
-      } else if (result && result.data && result.data.Error) {
-        setMessage(result.data.Error);
       } else {
-        return;
+        setMessage(result.data.Error);
       }
     } catch (error) {
       setIsError(true);

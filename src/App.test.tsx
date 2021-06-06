@@ -8,12 +8,13 @@ describe("App", () => {
   });
 
   beforeAll(() => {
-    const postsURL = `https://www.omdbapi.com/?apikey=89285fbf&s=fast`;
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    const postsURL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=`;
     fetchMock.get(postsURL, {
       Search: [
         {
           imdbID: "111",
-          Title: "Fast",
+          Title: "fast",
           Poster: "link",
           Type: "Movie",
           Year: "2020",
@@ -35,5 +36,14 @@ describe("App", () => {
     const submitBtn = screen.getByRole("button", { name: /Search/i });
     fireEvent.change(searchInput, { target: { value: "fast" } });
     fireEvent.click(submitBtn);
+    expect(screen.getByLabelText("favourite-header")).toBeInTheDocument();
+
+    /**
+     * // expect(screen.getByText(/fast/i)).toBeInTheDocument();
+     *
+     * I was trying to mock the data and check if its coming back, but could not work out it yet, and I am out of time.
+     * will send unfinished tests, but will come back to it to find the solution.(puree curiosity)
+     *
+     */
   });
 });

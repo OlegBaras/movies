@@ -43,11 +43,11 @@ const FavouriteMovies = () => {
         }
       })
     );
-  }, []);
+  }, [API_KEY]);
 
   return (
     <section className="favourite-movies">
-      <h1>Favourite Movies</h1>
+      <h1 aria-label="favourite-header">Favourite Movies</h1>
       <div className="favourite-list">
         {favouriteMovies.length
           ? favouriteMovies.map((movie: Movie) => (
