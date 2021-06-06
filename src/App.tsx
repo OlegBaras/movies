@@ -48,6 +48,7 @@ const App: React.FC = () => {
     } else {
       return;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return (
