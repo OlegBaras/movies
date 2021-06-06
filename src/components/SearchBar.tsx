@@ -28,7 +28,7 @@ const SearchBar: React.FC<Props> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSearchKeyWord(searchKeyWord);
-    setUrl(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`);
+    setUrl(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchKeyWord}`);
   };
   //Input change event handler
   const onSearchKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
