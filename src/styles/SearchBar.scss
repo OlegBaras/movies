@@ -47,10 +47,13 @@ $secondary: #fff;
   .search-bar {
     width: 100vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 0.5rem;
     .movie-icon {
       width: 50px;
+    }
+    input {
+      width: 150px;
     }
   }
 }
