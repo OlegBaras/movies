@@ -48,7 +48,6 @@ $hoverColor: #d3d3d3;
 //Mobile view
 @media (max-width: 767px) {
   .search-bar {
-    @include common-font;
     width: 100vw;
     align-items: center;
     justify-content: space-around;
