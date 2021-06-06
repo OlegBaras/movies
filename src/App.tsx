@@ -61,7 +61,7 @@ const App: React.FC = () => {
         API_KEY={API_KEY}
       />
       <FavouriteMovies />
-      {isError ? <div>Error</div> : null}
+      {isError ? <div>Something went wrong</div> : null}
       {message ? <div className="message">{message}</div> : null}
       {isLoading ? (
         <Loading />

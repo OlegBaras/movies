@@ -8,7 +8,7 @@ function FavouriteMovies() {
   const [favouriteMovies, setFavouriteMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    const url = "http://www.omdbapi.com/?apikey=d5942f61&i=";
+    const url = "https://www.omdbapi.com/?apikey=d5942f61&i=";
     const ids = [
       "tt0120689",
       "tt0758758",
